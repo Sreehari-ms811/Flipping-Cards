@@ -1,0 +1,75 @@
+body{
+	background-color:white;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	margin:0;
+	height:100vh;
+	}
+	
+.surface{
+	background-color:tan;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	width: 90vw;
+	height:90vh;
+	}
+
+.cards{
+	width:300px;
+	height:400px;
+	display:flex;
+	flex-direction:column;
+	flex-wrap:wrap;
+	justify-content: space-between;
+	padding:20px;
+	margin:20px;
+	border-radius:10px;
+	align-items:flex-start;
+	background-color:whitesmoke;
+	border: 3px black solid;
+	font-size:250%;
+	font-weight:bold;
+	box-shadow: 0px 8px 16px rgba(0,0,0,100%);
+	transform-style: preserve-3d;
+}
+
+.cards:hover{
+	cursor: pointer;
+	}
+
+.cards:active{
+	transform:rotateX(180deg);
+	transition: all 0.3s ease;
+	}
+
+.red{
+	color:red;
+	}
+.black{
+	color:black;
+	}
+	
+.top, .center, .bottom{
+	width:100%;
+	display:flex;
+	}
+	
+.top{
+	justify-content: flex-start;
+	align-items:flex-start;
+	}
+
+.center{
+	justify-content:center;
+	align-items:center;
+	font-size:400%;
+	}
+
+.bottom{
+	justify-content:flex-start;
+	align-items:flex-end;
+	transform: rotate(180deg);
+}
+
